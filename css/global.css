@@ -1,0 +1,42 @@
+/* global variables to change the website's 'theme' */
+
+:root {
+    --bg-color: coral;
+    --accent-color: green;
+    --txt-color: blue;
+    --link-color: blue;
+}
+    /* use them in style attributes like that:
+        #div1 {
+            background-color: var(--main-bg-color);
+            color: var(--main-txt-color);
+            ...
+        }
+    */
+
+
+body{
+    margin: 0px;
+    padding:10px;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Times New Roman", "Helvetica", "Arial", sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+h2{
+    font-size: 1.2em;
+    font-weight: bold;
+}

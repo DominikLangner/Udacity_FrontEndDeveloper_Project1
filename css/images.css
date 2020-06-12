@@ -1,0 +1,18 @@
+.hero{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.card img{
+  height: 200px;
+}
+.share-fb{
+  margin-top: 0px;
+  height: 29px;
+}
+.share-tw{
+  margin-top: 5px;
+}
+.share-li{
+  margin-top: 5px;
+}

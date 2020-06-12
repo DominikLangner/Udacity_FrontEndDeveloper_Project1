@@ -1,0 +1,32 @@
+/*Class Selector */
+.title {
+    font-size: 30px;
+    color: darkgoldenrod;
+}
+.quote{
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    width: fit-content;
+    background-color: darkgray;
+}
+
+.quoteText{
+font-style: italic;
+}
+.quoteAuthor{
+    text-align: right;
+    font-weight: bold;
+    }
+    .quoteAuthor::before{
+       content: "– "
+        }
+
+.social-share{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid yellow;
+}
+/* h1{
+color: darkolivegreen;
+}     */

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Blog post</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+    <link rel="stylesheet" href="css/main-stylesheet.css">
+
+    <!-- script to share to FB: dynamically get the viewes URL/site and pass it to FB  -->
+    <script type="text/javascript">
+        function fbshare() {
+            var sharer = "https://www.facebook.com/sharer/sharer.php?u=";
+            window.open(sharer + location.href, 'sharer', 'width=626,height=436');
+        }
+    </script>
+</head>
+
+
+<body>
+    <div class="blogpost">
+        <div class="header">
+            Header
+        </div>
+
+        <div class="author">
+            <div class=name>Author's name</div>
+            <div class="titel">Title</div>
+            <div class="company">Company</div>
+            <div class="bio"></div>
+        </div>
+
+        <div class="article">
+            <h1>This is the first headline</h1><br>
+            <h2>1. This could be a second headline</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <h3>1.1. A h3-formatted sub-headline</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            <h3>1.2. Another h3-formatted sub-headline</h3>
+            <p>This time, let's start with a quote:</p>
+            <div class="quote">
+                <div class="quoteText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor</div>
+                <div class="quoteAuthor">Donald Duck</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            <h2>2. And last but not least: Another h2-Headline</h2>
+        </div>
+
+        <div class="social">
+            Like it? Share it!
+            <div class=social-share>
+                <!-- Twitter -->
+                <div class="share-tw">
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                        data-show-count="false">Tweet</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="share-fb">
+                    <!-- Facebook -->
+                    <a href="" onclick="fbshare();"><img class="share-fb" src="./img/fb.png"></a>
+                </div>
+                <div class="share-li">
+                    <!-- LinkedIn                -->
+                    <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: de_DE</script>
+                    <script type="IN/Share" data-url="https://www.share-my-blog-url.com"></script>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

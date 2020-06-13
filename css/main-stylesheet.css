@@ -4,3 +4,8 @@
 @import "./blogpost.css";
 @import "./images.css";
 @import "./global.css";
+
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+

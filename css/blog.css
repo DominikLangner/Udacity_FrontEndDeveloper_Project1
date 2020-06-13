@@ -1,8 +1,7 @@
-
-}
 .container{
     display: grid;
-    width: 80vw;
+    width: 90vw;
+    padding: 8px;
     min-height: 100vh;
     margin:auto;
     justify-content:center;
@@ -13,13 +12,10 @@
     "nav nav nav nav"
     "main main main main"
     "ft ft ft ft";
-    border: 3px solid yellow;
 }
-
 
 .header{
     font-size: 23px;
-    border: 2px solid blue;
     grid-area: hd;
 }
 
@@ -29,15 +25,16 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: 14px;
-    border: 2px solid blue;
     grid-area: nav;
+    background-color: var(--accent-color);
+    margin: 5px 0px;
+    padding: 4px;
 }
+
 .nav > a{
     margin: 2px;
     white-space: nowrap;
     text-align:center;
-    border: 1px red solid;
-
 }
 
 .main{
@@ -45,16 +42,15 @@
     flex-direction:column;
     justify-content: center;
     font-size: 14px;
-    border: 2px solid blue;
-    grid-area: main;
-    /* overflow-y: auto; */   
+    text-align: center;
+    grid-area: main; 
 }
 
-}
 .footer{
     font-size: 8px;
-    border: 2px solid blue;
     grid-area: ft;
+    background-color: var(--accent-color);
+    padding: 5px;
 }
 
 /* cardholder inside main to center items AND have them evenly spaced */
@@ -62,20 +58,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* align-items: center; */
-    border: 1px solid aquamarine;
 }
+
 .card{
     display: flex;
-    /* flex-shrink: 0;
-    flex-grow:1; */
-
     flex-direction: column;
     height: max-content;
     width: 200px;
     margin: 20px;
     border-radius: 8px;
-    /* border: 1px solid red; */
+    background-color: var(--accent-color);
     /* Shadows for card effect + animation */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -85,18 +77,13 @@
     padding:8px;
 }
 
-   
-}
 .card a {
     color: white;
     text-decoration: none;
-    /* margin-top: auto; */
-
 }
 
-
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: var(--button-color);
     border: none;
     padding:5px;
     border-radius: 0px 0px 8px 8px;
@@ -106,19 +93,9 @@
     display: inline-block;
   }
 
-
 .button:hover {
-    background-color: rgb(82, 202, 86);
+    background-color: var(--button-color2);
 }
-
-
-
-
-/*Class Selector */
-.title {
-    font-size: 30px;
-}
-
 
 /* -------------------------------------- */
 /* -----------responsive stuff----------- */
@@ -132,8 +109,8 @@
             flex-wrap: wrap;
             justify-content: center;
             font-size: 14px;
-            border: 2px solid blue;
             grid-area: nav;
+            background-color: var(--bg-color);
     }
 
     .nav > a{
@@ -141,8 +118,6 @@
         margin: 2px;
         padding: 2px;
         white-space: nowrap;
-        border: 1px red solid;
-        background-color: chartreuse;
-    
+        background-color: var(--accent-color);
     }
 }
